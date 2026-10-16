@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Student Score Prediction | Traditional Model</title>
+</head>
+<body>
+    <h1>StudentPerformance.</h1>
+
+    <main>
+        <form class="pred-form" id="form">
+            <div class="form-input">
+                <span>Age</span>
+                <input type="text" required id="age" placeholder="Enter Your Age">
+            </div>
+            <div class="form-input">
+                <span>Absences</span>
+                <input type="text" required id="absence" placeholder="Your Absences">
+                <span class="nb">Number of times you have been absent</span>
+            </div>
+            <div class="form-input">
+                <span>First Period Grade</span>
+                <input type="text" required id="firstGrade" placeholder="First Period Grade">
+            </div>
+            <div class="form-input">
+                <span>Second Period Grade</span>
+                <input type="text" required id="secondGrade" placeholder="Second Period Grade">
+            </div>
+            <div class="form-input">
+                <span>Study Time</span>
+                <input type="text" required id="time" placeholder="Study Time">
+            </div>
+
+            <button class="pred-btn">GET SCORE</button>
+        </form>
+        <p id="predicted"></p>
+    </main>
+
+    <footer>
+        <h2>This is a Traditional Model Project</h2>
+        <p class="footer-yap">Results Predicted from this model isn't 100% accurate</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
